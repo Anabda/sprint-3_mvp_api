@@ -1,5 +1,2 @@
-from schemas.aparelho import AparelhoSchema, AparelhoBuscaSchema, \
-                            AparelhoViewSchema, ListagemAparelhosSchema, \
-                            AparelhoDelSchema, \
-                            apresenta_aparelhos, apresenta_aparelho
+from schemas.aparelho import *
 from schemas.error import ErrorSchema

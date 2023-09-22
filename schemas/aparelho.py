@@ -15,6 +15,17 @@ class AparelhoSchema(BaseModel):
     comodo: Optional[str]
     amperagem: Optional[float]
     diametro_fio: Optional[float]
+
+class AparelhoUpdateSchema(BaseModel):
+    """ Define como um aparelho a ser editado deve ser representado
+    """
+    
+    nome: str
+    potencia: float
+    voltagem: int
+    comodo: Optional[str]
+    amperagem: Optional[float]
+    diametro_fio: Optional[float]
         
 class AparelhoBuscaSchema(BaseModel):
     """ Define como deve ser a estrutura que representa a busca. Que será
@@ -26,6 +37,11 @@ class ListagemAparelhosSchema(BaseModel):
     """ Define como uma listagem de aparelhos será retornada.
     """
     aparelhos:List[AparelhoSchema]
+
+class IntegracaoSchema(BaseModel):
+    """ Define como uma mensagem de erro será representada
+    """
+    mesage: str
 
 def apresenta_aparelhos(aparelhos: List[Aparelho]):
     """ Retorna uma representação do aparelho.

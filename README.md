@@ -1,5 +1,6 @@
 # Sobre o projeto
 Meu projeto tem como objetivo auxiliar no levantamento de aparelhos eletrônicos de uma residência. Esse levantamento pode ser usado tanto para inventário patrimonial quanto para auxiliar no cálculo do balanceamento elétrico ao se fazer um quadro de luz.
+Essa API consome uma API de cômodos de um lar.
 
 ## Como executar em modo desenvolvimento
 
